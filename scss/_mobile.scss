@@ -46,6 +46,17 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "ed1"
+      "ed2"
+      "work1"
+      "work2"
+      "work3";
+    grid-template-columns: 1fr;
+  }
 }
 
 //Mobiles

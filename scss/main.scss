@@ -1,6 +1,6 @@
 @import "config";
 @import "menu";
-@import "mobile";
+
 * {
   box-sizing: border-box;
 }
@@ -29,7 +29,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.2);
+    background: rgba(lighten(#444, 2), 0.2);
   }
 }
 
@@ -50,7 +50,8 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  //height: 100%;
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -71,3 +72,61 @@ main {
     }
   }
 }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bioimage ed1 ed2"
+    "work1 work2 work3";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  background: url("../img/portrait.jpg");
+  background-size: cover;
+  border-radius: 80%;
+  border: solid 3px $secondary-colour;
+}
+.work1 {
+  grid-area: work1;
+}
+
+.work2 {
+  grid-area: work2;
+}
+
+.ed-1 {
+  grid-area: ed1;
+}
+
+.ed-2 {
+  grid-area: ed2;
+}
+
+.education {
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $tertiary-colour 5px solid;
+}
+
+.work {
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-colour 5px solid;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+  align-self: baseline;
+}
+
+@import "mobile";
