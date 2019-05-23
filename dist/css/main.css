@@ -195,6 +195,57 @@ main {
   padding: 0.5rem;
   border-bottom: #ff1654 5px solid; }
 
+.projects-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioprojects tableprojects tableprojects";
+  grid-template-columns: repeat(3, 1fr); }
+
+.bio {
+  grid-area: bioprojects;
+  width: 100%;
+  background: #298bb5;
+  padding: 0.5rem;
+  border-bottom: #ff1654 5px solid;
+  text-align: center; }
+
+.table {
+  grid-area: tableprojects; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff; }
+
+th {
+  text-align: left;
+  color: rgba(255, 22, 84, 0.7); }
+
+thead th {
+  background-color: #55608f; }
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+tbody td {
+  position: relative; }
+  tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;

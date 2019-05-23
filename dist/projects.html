@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <title>My Projects</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding"><div class="portrait"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="/../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item current">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">How To Reach Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="about">
+      <h1 class="lg-heading">
+        My <span class="text-secondary">Projects</span>
+      </h1>
+
+      <h2 class="sm-heading"></h2>
+      <div class="projects-info">
+        <div class="projects bio">
+          <h2>What is this?</h2>
+          <p>
+            On the right you should see a table that is a live view of what is
+            on my github. I used the github API to get the data from
+            "https://api.github.com/users/joshhamwee/repos" and from this I
+            extracted the JSON data, and filtered it to take the data that I
+            required. This was my first project using Javascript and JSON.
+          </p>
+        </div>
+        <div class="projects table">
+          <div style="overflow-x:auto;">
+            <div class="tablestyle" id="metric_results"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">Copyright &copy; 2019</footer>
+    <script src="js/table.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
