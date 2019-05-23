@@ -57,6 +57,13 @@
       "work3";
     grid-template-columns: 1fr;
   }
+
+  .projects-info {
+    grid-template-areas:
+      "bioprojects"
+      "tableprojects";
+    grid-template-columns: 1fr;
+  }
 }
 
 //Mobiles

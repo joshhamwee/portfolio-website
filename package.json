@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Josh's Portfolio Website",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/joshhamwee/portfolio-website/issues"
   },
-  "homepage": "https://github.com/joshhamwee/portfolio-website#readme",
+  "homepage": "https://joshhamwee.io",
   "dependencies": {
     "node-sass": "^4.12.0"
   }

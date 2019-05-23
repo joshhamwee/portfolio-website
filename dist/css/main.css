@@ -283,6 +283,9 @@ tbody td {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "ed1" "ed2" "work1" "work2" "work3";
+    grid-template-columns: 1fr; }
+  .projects-info {
+    grid-template-areas: "bioprojects" "tableprojects";
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
